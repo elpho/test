@@ -1,0 +1,28 @@
+{
+    "name": "elpho/test",
+    "description": "Test package for the elpho framework",
+    "type": "project",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Roger Cruz",
+            "email": "spark.crz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "5.7.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/",
+            "elpho\\event\\": "../event/src/",
+            "elpho\\lang\\": "../lang/src/",
+            "elpho\\": "../elpho/src/",
+            "elpho\\database\\": "../database/src/",
+            "elpho\\di\\": "../di/src/",
+            "elpho\\mvc\\": "../mvc/src/",
+            "elpho\\io\\": "../io/src/"
+        }
+    }
+}
