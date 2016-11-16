@@ -1,5 +1,6 @@
 <?php
-  include_once 'suitSetup.php';
+  include_once 'inc/suitSetup.php';
+  include_once 'helpers/EntryHelper.php';
 
   class StarterTest extends PHPUnit_Framework_TestCase {
     /**

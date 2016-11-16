@@ -1,5 +1,7 @@
 <?php
-  include_once 'suitSetup.php';
+  include_once 'inc/suitSetup.php';
+  include_once 'helpers/EntryHelper.php';
+  include_once 'helpers/HelperAnnotation.php';
 
   class AnnotationTest extends PHPUnit_Framework_TestCase {
     public function testReadFromClass(){
