@@ -1,8 +1,9 @@
 <?php
-  include_once 'inc/suitSetup.php';
+  require 'vendor/autoload.php';
+  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
 
-  class StarterTest extends PHPUnit_Framework_TestCase {
+  class StarterTest extends ElphoTestCase {
     /**
     * @expectedException Exception
     * @expectedExceptionMessage Starter can only be run once!

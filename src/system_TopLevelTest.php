@@ -1,8 +1,9 @@
 <?php
-  include_once 'inc/suitSetup.php';
+  require 'vendor/autoload.php';
+  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
 
-  class TopLevel extends PHPUnit_Framework_TestCase {
+  class TopLevel extends ElphoTestCase {
     public function testCall(){
       $this->assertEquals(call(array($this, "callHelper"), "a", "b", "c"), array('a', 'b', 'c'));
     }

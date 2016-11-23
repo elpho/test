@@ -1,9 +1,10 @@
 <?php
-  include_once 'inc/suitSetup.php';
+  require 'vendor/autoload.php';
+  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
   include_once 'helpers/HelperAnnotation.php';
 
-  class AnnotationTest extends PHPUnit_Framework_TestCase {
+  class AnnotationTest extends ElphoTestCase {
     public function testReadFromClass(){
       $class = new ReflectionClass('EntryHelper');
       $annotations = HelperAnnotation::read($class);
