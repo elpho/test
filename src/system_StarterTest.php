@@ -1,9 +1,8 @@
 <?php
   require 'vendor/autoload.php';
-  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
 
-  class StarterTest extends ElphoTestCase {
+  class StarterTest extends support\ElphoTestCase {
     /**
     * @expectedException Exception
     * @expectedExceptionMessage Starter can only be run once!

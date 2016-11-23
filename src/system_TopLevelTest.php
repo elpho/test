@@ -1,9 +1,8 @@
 <?php
   require 'vendor/autoload.php';
-  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
 
-  class TopLevel extends ElphoTestCase {
+  class TopLevel extends support\ElphoTestCase {
     public function testCall(){
       $this->assertEquals(call(array($this, "callHelper"), "a", "b", "c"), array('a', 'b', 'c'));
     }

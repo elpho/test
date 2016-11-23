@@ -1,5 +1,7 @@
 <?php
-  abstract class ElphoTestCase extends PHPUnit_Framework_TestCase {
+  namespace support;
+
+  abstract class ElphoTestCase extends \PHPUnit_Framework_TestCase {
     public static function setUpBeforeClass(){
       if(!defined('DEBUG')){
         define('DEBUG', 1);

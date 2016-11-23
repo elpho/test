@@ -1,10 +1,9 @@
 <?php
   require 'vendor/autoload.php';
-  include_once 'support/ElphoTestCase.php';
   include_once 'helpers/EntryHelper.php';
   include_once 'helpers/HelperAnnotation.php';
 
-  class AnnotationTest extends ElphoTestCase {
+  class AnnotationTest extends support\ElphoTestCase {
     public function testReadFromClass(){
       $class = new ReflectionClass('EntryHelper');
       $annotations = HelperAnnotation::read($class);

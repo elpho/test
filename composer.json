@@ -16,6 +16,7 @@
     "autoload": {
         "psr-4": {
             "": "src/",
+            "support\\": "src/support/",
             "elpho\\event\\": "../event/src/",
             "elpho\\lang\\": "../lang/src/",
             "elpho\\": "../elpho/src/",
